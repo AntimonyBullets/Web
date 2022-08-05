@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em and rem</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* html{
+            font-size: 30px;
+        } */
+        .container{
+            box-sizing: border-box;
+            border: 5px solid black;
+            font-size: 20px;
+            height: 100vh;
+            /* (100vh sets the height to 100% of the page height) */
+            width: 100vw;
+            /* (Similary, 100vw sets the width to 100% of the page width) */
+        }
+        p{
+            text-align: center;
+        }
+        #para1{
+            font-size: 1.5em;
+            padding: 1.5em;
+        }
+        #para2{
+            font-size: 2rem;
+            padding:2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="para1">This is the pragraph 1</p>
+        <p id="para2">This is the pragraph 2</p>
+        <p id="para3">This is the pragraph 3</p>
+    </div>
+</body>
+</html>

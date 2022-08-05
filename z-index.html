@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width:170px;
+            height: 170px;
+        }
+        #one{
+            background-color: blue;
+        }
+        #two{
+            background-color: red;
+            position: relative;
+            z-index: 1;
+        }
+        #three{
+            background-color: black;
+            position: absolute;
+            top: 85px;
+            /* z-index: 2; */
+        }
+        #four{
+            background-color: green;
+            visibility: hidden;
+            /* display: none; */
+        }
+        #five{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="one"></div>
+    <div class="container" id="two"></div>
+    <div class="container" id="three"></div>
+    <div class="container" id="four"></div>
+    <div class="container" id="five"></div>
+</body>
+</html>

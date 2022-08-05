@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positons</title>
+    <style>
+        body {
+            height: 2250px;
+        }
+
+        .sticky {
+            width: 100px;
+            background-color: yellow;
+            border: 2px solid blue;
+            margin: 100px auto;
+            position: sticky;
+            top: 0;
+        }
+
+        .sticky h1 {
+            text-align: center;
+        }
+
+        .container1 {
+            border: 2px solid red;
+            width: 1000px;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        .container2 {
+            border: 2px solid red;
+            width: 1400px;
+            height: 400px;
+            margin: auto;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .box {
+            border: 2px solid black;
+            box-sizing: border-box;
+            padding: 5px;
+            width: 220px;
+            display: inline-block;
+            background-color: rgb(227, 235, 220);
+        }
+
+        #itemA {
+            position: relative;
+            top: 10px;
+            right: 30px;
+        }
+
+        #itemB {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #itemY {
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+        }
+
+        #itemX {
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticky">
+        <h1>Sticky</h1>
+    </div>
+    <div class="container1">
+        <div class="box" id="itemA">
+            <h1>Relative</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facilis excepturi corrupti minus? Nesciunt
+                pariatur recusandae commodi, voluptatum perferendis natus.</p>
+        </div>
+        <div class="box" id="itemB">
+            <h1>Absolute 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facilis excepturi corrupti minus? Nesciunt
+                pariatur recusandae commodi, voluptatum perferendis natus.</p>
+        </div>
+        <div class="box" id="itemC">
+            <h1>Heading 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facilis excepturi corrupti minus? Nesciunt
+                pariatur recusandae commodi, voluptatum perferendis natus.</p>
+        </div>
+        <div class="box" id="itemD">
+            <h1>Heading 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facilis excepturi corrupti minus? Nesciunt
+                pariatur recusandae commodi, voluptatum perferendis natus.</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="box" id="itemX">
+            <h1>Fixed</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facilis excepturi corrupti minus? Nesciunt
+                pariatur recusandae commodi, voluptatum perferendis natus.</p>
+        </div>
+        <div class="box" id="itemY">
+            <h1>Absolute 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facilis excepturi corrupti minus? Nesciunt
+                pariatur recusandae commodi, voluptatum perferendis natus.</p>
+        </div>
+    </div>
+</body>
+
+</html>

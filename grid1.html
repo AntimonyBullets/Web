@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid 1</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 400px 200px 300px 100px; */
+            /* grid-template-columns: 100px auto 200px 150px;*/
+            /* grid-template-columns: 1fr 2fr 1fr 3fr;*/
+            /* Here 'fr' unit will divide the width of the columns in the given ratio. Here, the ratio is 1:2:1:3*/
+            grid-template-columns: repeat(4, auto);
+        }
+        .item{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(204, 192, 215);
+            border: 2px solid black;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <p>Box1</p>
+        </div>
+        <div class="item">
+            <p>Box2</p>
+        </div>
+        <div class="item">
+            <p>Box3</p>
+        </div>
+        <div class="item">
+            <p>Box4</p>
+        </div>
+        <div class="item">
+            <p>Box5</p>
+        </div>
+        <div class="item">
+            <p>Box6</p>
+        </div>
+        <div class="item">
+            <p>Box7</p>
+        </div>
+        <div class="item">
+            <p>Box8</p>
+        </div>
+        <div class="item">
+            <p>Box9</p>
+        </div>
+        <div class="item">
+            <p>Box10</p>
+        </div>
+        <div class="item">
+            <p>Box11</p>
+        </div>
+        <div class="item">
+            <p>Box12</p>
+        </div>
+        <div class="item">
+            <p>Box13</p>
+        </div>
+        <div class="item">
+            <p>Box14</p>
+        </div>
+        <div class="item">
+            <p>Box15</p>
+        </div>
+        <div class="item">
+            <p>Box16</p>
+        </div>
+        <div class="item">
+            <p>Box17</p>
+        </div>
+        <div class="item">
+            <p>Box18</p>
+        </div>
+        <div class="item">
+            <p>Box19</p>
+        </div>
+        <div class="item">
+            <p>Box20</p>
+        </div>
+    </div>
+</body>
+</html>

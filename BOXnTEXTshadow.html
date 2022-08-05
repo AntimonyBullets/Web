@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow and text-shadow</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .box {
+        background-color: rgb(223, 224, 225);
+        margin: 20px;
+        padding: 20px;
+
+
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+
+        /* box-shadow: 10px 15px black; */
+        /* box-shadow: -10px -15px black; */
+        box-shadow: 10px 10px 10px black;
+        /* box-shadow: 10px 10px 10px 3px black; */
+        /* box-shadow: 10px 10px 10px 3px rgba(0,0,0,0.5) ; */
+
+        /* box-shadow: inset 5px 6px black ; */
+        /* box-shadow: 4px 5px black, 6px 7px red ; */
+
+    }
+
+    .box p {
+        margin-top: 10px;
+    }
+
+    .box h2 {
+        /* text-shadow: 2px 3px red; */
+        /* text-shadow:-2px -3px red ; */
+        text-shadow: 2px 3px 4px red;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <h2>Box One</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, inventore. Corrupti quibusdam ea
+                cupiditate, aperiam impedit optio iusto nesciunt debitis? Eveniet explicabo at amet cumque distinctio
+                fuga quasi blanditiis corrupti?</p>
+        </div>
+        <div class="box" id="box2">
+            <h2>Box Two</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, inventore. Corrupti quibusdam ea
+                cupiditate, aperiam impedit optio iusto nesciunt debitis? Eveniet explicabo at amet cumque distinctio
+                fuga quasi blanditiis corrupti?</p>
+        </div>
+        <div class="box" id="box3">
+            <h2>Box Three</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, inventore. Corrupti quibusdam ea
+                cupiditate, aperiam impedit optio iusto nesciunt debitis? Eveniet explicabo at amet cumque distinctio
+                fuga quasi blanditiis corrupti?</p>
+        </div>
+    </div>
+</body>
+
+</html>
